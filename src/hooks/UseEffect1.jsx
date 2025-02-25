@@ -57,7 +57,7 @@ In this case, it updates the document title with the clicks count whenever count
 Dependency Array ([count]):
 useEffect runs only when count changes.
 If the dependency array was empty ([]), it would run only once after the initial render.
-If omitted, it would run after every render, causing unnecessary updates.
+If omitted, it would run after every render, causing unnecessary updates. 
 
 Component Behavior:
 The counter buttons increase or decrease count, affecting the useEffect hook.

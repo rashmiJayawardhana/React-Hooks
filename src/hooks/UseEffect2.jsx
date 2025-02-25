@@ -10,7 +10,7 @@ function UseEffect2() {
             .then(response => response.json())  // Convert response to JSON
             .then(data => setData(data))  // Update state with fetched data
             .catch(error => console.error("Error fetching data:", error)); // Handle errors
-    }, []); // Empty dependency array ensures it runs only once when component mounts
+    }, []); // Empty dependency array ensures it runs only once when component mounts, If haven't any dependency array it runs infinite times.
 
     return (
         <div>
