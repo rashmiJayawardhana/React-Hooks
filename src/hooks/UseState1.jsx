@@ -25,3 +25,9 @@ function UseState1() {
 }
 
 export default UseState1
+
+{/*
+useState(2): Initializes a state variable num with the value 2.
+setnum(3): Updates the state variable num to 3 when the button is clicked.
+React re-renders the component whenever the state changes, updating the displayed number.
+*/}
