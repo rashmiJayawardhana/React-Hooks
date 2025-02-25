@@ -6,7 +6,7 @@ function UseEffect2() {
 
     // useEffect to fetch data when the component mounts
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/users/1/posts") // API URL
+        fetch("https://jsonplaceholder.typicode.com/posts") // API URL
             .then(response => response.json())  // Convert response to JSON
             .then(data => setData(data))  // Update state with fetched data
             .catch(error => console.error("Error fetching data:", error)); // Handle errors
@@ -15,15 +15,14 @@ function UseEffect2() {
     return (
         <div>
             <h2>Fetched Data</h2>
-            <ul className="prod_list" style={{color:"white", "paddingLeft":"20px"}}>
+            <ul>
                 {data.slice(0, 5).map(post => ( // Displaying only first 5 posts
-                    <li key={post.id} style={{listStyleType:"circle"}}>{post.title}</li>
+                    <li key={post.id}>{post.title}</li>
                 ))}
             </ul>
         </div>
     );
 }
-
 export default UseEffect2;
 
 {/*
