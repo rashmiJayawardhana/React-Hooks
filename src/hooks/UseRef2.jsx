@@ -27,6 +27,10 @@ function UseRef2() {
 export default UseRef2;
 
 {/*
+Used to focus the input field and change its background color.
+How useRef is used? Accesses inputRef.current to apply focus() and change style.backgroundColor.
+Focuses the input and changes background color when the button is clicked.
+No state change, but modifies the DOM directly.
 useRef(null) creates a reference (inputRef) initialized as null.
 The ref={inputRef} is assigned to the <input> element.
 inputRef.current.focus() programmatically focuses the input field when the button is clicked.
