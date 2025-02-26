@@ -13,7 +13,6 @@ function UseRef2() {
         }
     };
 
-
     return (
         <div>
             <h2>useRef Example</h2>
