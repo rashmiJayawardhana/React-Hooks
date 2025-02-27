@@ -20,6 +20,6 @@ useContext allows you to share data (like the username in this example) across m
 You can achieve this by creating a Context with createContext() and then using useContext() to consume the context in any component that needs access to it.
 Prop drilling passes props through each intermediate component, which can become cumbersome.
 useContext allows direct access to data without needing to pass it down manually through every component.
-//Context Provider (UserApp.Provider): This component is where we define the value (e.g., username) and make it available to its children.
+Context Provider (UserApp.Provider): This component is where we define the value (e.g., username) and make it available to its children.
 Context Consumer (useContext(UserApp)): Any component wrapped in the Provider can access the value using useContext without needing to explicitly pass it down.
 */}
